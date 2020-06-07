@@ -13,3 +13,8 @@ end
 get '/member' do
     erb( :member_list )
 end
+
+get '/class/:id' do
+    @class_name = MuscleBoundClass.new(params['id'])
+    erb(:show)
+end
