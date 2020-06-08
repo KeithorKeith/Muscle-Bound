@@ -23,9 +23,19 @@ class GymClass
           $1, $2, $3
         )
         RETURNING id"
-        values = [@name, @capacity, @class_name]
+        values = [@time, @capacity, @class_name]
         results = SqlRunner.run(sql, values)
         @id = results.first()['id'].to_i
       end
 
+      def self.delete_all
+        sql = "DELETE FROM gymclasses"
+        SqlRunner.run( sql )
+      end
+
+      def self.all
+        sql = "SELECT * FROM gymclasses"
+        results = SqlRunner.run( sql )
+        return results.map { |hash| GymClass.new( hash )}
+      end
 end
