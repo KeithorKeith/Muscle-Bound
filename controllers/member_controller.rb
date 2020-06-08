@@ -10,3 +10,4 @@ get '/members' do
     @members = Member.all()
     erb ( :"member_list/index" )
 end
+

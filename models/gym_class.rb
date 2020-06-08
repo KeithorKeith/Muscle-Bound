@@ -28,6 +28,22 @@ class GymClass
         @id = results.first()['id'].to_i
       end
 
+      def update()
+        sql = "UPDATE gymclasses
+        SET
+        (
+          time,
+          capacity,
+          class_name
+        ) =
+        (
+          $1, $2, $3
+        )
+        WHERE id = $4"
+        values = [@time, @capacity, @class_name, @id]
+        SqlRunner.run( sql, values )
+      end
+
       def self.delete_all
         sql = "DELETE FROM gymclasses"
         SqlRunner.run( sql )

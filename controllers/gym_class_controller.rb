@@ -11,3 +11,7 @@ get '/gym_classes' do
     erb ( :"gym_class_list/index" )
 end
 
+
+get '/gym_classes/new' do
+    erb( :"gym_class_list/new" )
+end

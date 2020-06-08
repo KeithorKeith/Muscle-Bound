@@ -14,11 +14,11 @@ class Member
         sql = "INSERT INTO members
         (
           first_name,
-          last_name,
+          last_name
         )
         VALUES
         (
-          $1, $2,
+          $1, $2
         )
         RETURNING id"
         values = [@first_name, @last_name]
@@ -34,7 +34,7 @@ class Member
     def self.all
         sql = "SELECT * FROM members"
         results = SqlRunner.run( sql )
-        return results.map { |hash| GymClass.new( hash )}
+        return results.map { |hash| Member.new( hash )}
     end
 
     def full_name()

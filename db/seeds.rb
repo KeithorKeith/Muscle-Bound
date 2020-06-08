@@ -4,7 +4,7 @@ require_relative( "../models/gym_class")
 require( "pry" )
 
 GymClass.delete_all()
-# Member.delete_all()
+Member.delete_all()
 
 gymclass1 = GymClass.new({
     "time" => "12:00pm",
