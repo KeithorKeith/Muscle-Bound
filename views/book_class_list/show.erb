@@ -1,0 +1,9 @@
+<h1><%= @member.full_name %> (member)</h1>
+
+<h3>Booked Class:</h3>
+
+<ul>
+  <% @member.gymclass.each do |gymclass| %>
+  <li><%= gymclass.name %></li>
+  <% end %>
+</ul>
