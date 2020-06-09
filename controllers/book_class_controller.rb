@@ -1,0 +1,7 @@
+require( 'sinatra' )
+require( 'sinatra/contrib/all' )
+require( 'pry' )
+require_relative( '../models/member' )
+require_relative( '../models/gym_class' )
+require_relative( '../models/book_class' )
+also_reload( '../models/*' ) 

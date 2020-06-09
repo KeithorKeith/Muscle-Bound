@@ -1,4 +1,7 @@
-<form method="POST" action="/gym-classes">
+<form method="POST" action="/gym_classes">
+
+    <label for="class_name">Class Name:</label>
+    <input id="class_name" type="text" name=class_name />
 
     <label for="time">Start Time:</label>
     <input id="time" type="number" name=time />
@@ -8,11 +11,12 @@
 
     <label for="gym-class-selct">Choose a class:</label>
     <select id="gym-class-select" name='gymclass'>
+        <option selected disabled value>Choose a class</option>
         <option value="Kettlebells">Kettlebells</option>
         <option value="Squats">Squats</option>
         <option value="Deadlifts">Deadlifts</option>
     </select>
 
-
+    <input type="submit" value="Add Class">
 
 </form>

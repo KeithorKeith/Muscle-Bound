@@ -15,3 +15,9 @@ end
 get '/gym_classes/new' do
     erb( :"gym_class_list/new" )
 end
+
+post '/gym_classes' do
+    gymclass = GymClass.new( params )
+    gymclass.save()
+    redirect to "/gym_classes"
+end

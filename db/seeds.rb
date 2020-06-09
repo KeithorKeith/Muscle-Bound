@@ -51,3 +51,8 @@ member3 = Member.new({
 })
 
 member3.save()
+
+bookclass1 = BookClass.new({
+    "gym_class_id" => gymclass1.id
+    "member_id" => member1.id
+})
