@@ -1,6 +1,7 @@
+DROP TABLE IF EXISTS bookclasses;
 DROP TABLE IF EXISTS members;
 DROP TABLE IF EXISTS gymclasses;
-DROP TABLE IF EXISTS bookclasses;
+
 
 CREATE TABLE members (
     id SERIAL PRIMARY KEY,
@@ -17,6 +18,6 @@ CREATE TABLE gymclasses (
 
 CREATE TABLE bookclasses (
     id SERIAL PRIMARY KEY,
-    gym_class_id INT references gym_class(id),
-    member_id INT references member(id)
+    gym_class_id INT references gymclasses(id),
+    member_id INT references members(id)
 );

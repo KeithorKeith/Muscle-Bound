@@ -11,3 +11,12 @@ get '/members' do
     erb ( :"member_list/index" )
 end
 
+get '/members/new' do
+    erb( :"member_list/new" )
+end
+
+post '/members' do
+    member = Member.new( params )
+    member.save()
+    redirect to "/members"
+end

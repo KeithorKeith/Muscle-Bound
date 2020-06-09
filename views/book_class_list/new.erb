@@ -1,0 +1,20 @@
+<form method="POST" action="/book_classes">
+
+   
+    <label for="gym-class-selct">Choose a class:</label>
+    <select id="gym-class-id" name="gym_class_id">
+       <% @gymclasses.each do |gymclass| %>
+            <option value="<%= gymclass.id %>"><%= gymclass.class_name %></option>
+       <% end %>
+    </select>
+
+    <select id="member-id" name="member_id">
+        <% @members.each do |member| %>
+            <option value="<%= member.id %>"><%= member.full_name %></option>
+       <% end %>
+
+    </select>
+
+    <input type="submit" value="Book Class">
+
+</form>
