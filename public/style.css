@@ -1,0 +1,64 @@
+
+body{
+    background-color: #9cc5a1;
+    color: #1f2421;
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    background-image: url("/items/muscle_bound.gif");
+
+    height: 50vh;
+    padding: 50;
+    margin: 50;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #49a078;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #216869;
+    color: #1f2421;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+ 

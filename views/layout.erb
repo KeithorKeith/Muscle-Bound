@@ -3,19 +3,19 @@
 <head>
     <title>Muscle Bound</title>
     <link rel="stylesheet" href="/style.css" />
+    <div class="header">
+  <a href="/members/home" class="logo">Muscle Bound</a>
+  
+  <div class="header-right">
+    <a href="/members">Members</a>
+        <a href="/gym_classes">Classes</a>
+        <a href="/gym_classes/new">Add New Class</a>
+        <a href="/members/new">Add New member</a>
+        <a href="/book_classes/new">Create New Booking</a>
+  </div>
+</div>
 </head>
-<body>
-    <header>
-        <nav>
-            <li>
-                <a href="/members">Members</a>
-                <a href="/gym_classes">Classes</a>
-                <a href="/gym_classes/new">Add New Class</a>
-                <a href="/members/new">Add New member</a>
-                <a href="/book_classes/new">New Booking</a>
-            </li>
-        </nav>
-    </header>
+<body>   
   <%= yield %>
   </section>
 </body>

@@ -15,6 +15,10 @@ get '/members/new' do
     erb( :"member_list/new" )
 end
 
+get '/members/home' do
+    erb( :"member_list/home" )
+end
+
 post '/members' do
     member = Member.new( params )
     member.save()
