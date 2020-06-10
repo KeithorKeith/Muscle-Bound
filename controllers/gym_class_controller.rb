@@ -21,3 +21,8 @@ post '/gym_classes' do
     gymclass.save()
     redirect to "/gym_classes"
 end
+
+get '/gym_classes/:id' do
+    @gymclass = GymClass.find( params['id'] )
+    erb( :"gym_class_list/show" )
+end

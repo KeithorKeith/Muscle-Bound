@@ -20,3 +20,8 @@ post '/members' do
     member.save()
     redirect to "/members"
 end
+
+get '/members/:id' do
+    @member = Member.find( params['id'] )
+    erb( :"member_list/show" )
+end
