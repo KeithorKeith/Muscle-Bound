@@ -2,6 +2,7 @@
 body{
     background-color: #9cc5a1;
     color: #1f2421;
+
     padding: 10px;
     margin: 10px;
 }
@@ -59,6 +60,16 @@ body{
     .header-right {
       float: none;
     }
-  }
 
+
+    
+  }
+.gymmembers{
+      background-color: #dce1def1;
+      font-size: 20px; 
+}
  
+.gymmembers_title{
+    background-color: #dce1def6;
+    font-size: 20px;
+}

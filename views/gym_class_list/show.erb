@@ -1,8 +1,11 @@
+<div class="gymmembers_title">
 <h1><%= @gymclass.class_name %></h1>
+</div>
+
+<ul class="gymmembers">
 
 <h3>Booked Members:</h3>
 
-<ul>
   <% @gymclass.members.each do |member| %>
   <li><%= member.full_name %></li>
   <% end %>

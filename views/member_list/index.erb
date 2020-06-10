@@ -1,4 +1,6 @@
+<div class="gymmembers_title">
 <% @members.each do |member| %>
 <p>Name:<a href="/members/<%= member.id %>"> <%= member.full_name() %></a></p>
 <hr />
 <% end %>
+</div>
