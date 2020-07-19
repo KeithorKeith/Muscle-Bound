@@ -1,3 +1,22 @@
 # Muscle-Bound
-An app for management at a gym. 
-The app allows booking new members, editing new members as well as updating and adding classes.
+### An app for managing members and classes in a gym.
+
+# Setup:
+```
+createdb muscle-bound
+psql -d muscle-bound -f ./db/muscle-bound.sql
+
+```
+# Launching the app
+
+First install the sinatra gems
+
+```
+gem install sinatra sinatra-contrib pry
+```
+
+Secondly launch the app using:
+
+```
+ruby app.rb
+```
